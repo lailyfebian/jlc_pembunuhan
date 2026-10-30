@@ -956,7 +956,7 @@ p {
 }
 
 .about-content {
-    max-height: 145px;
+    max-height: 250px;
     transition: max-height .6s ease;
     position: relative;
 }
@@ -1018,7 +1018,7 @@ p {
     }
 
     .about-content {
-        max-height: 155px;
+        max-height: 250px;
     }
 
     .about-content p {
@@ -1037,7 +1037,7 @@ p {
     }
 
     .about-content {
-        max-height: 170px;
+        max-height: 250px;
     }
 
     .about-image {
@@ -1067,7 +1067,7 @@ p {
     }
 
     .about-content {
-        max-height: 165px;
+        max-height: 250px;
         margin-bottom: 30px;
     }
 
@@ -1107,7 +1107,7 @@ p {
     }
 
     .about-content {
-        max-height: 150px;
+        max-height: 250px;
         margin-bottom: 30px;
     }
 
@@ -1140,7 +1140,7 @@ p {
     }
 
     .about-content {
-        max-height: 140px;
+        max-height: 250px;
         margin-bottom: 30px;
     }
 
