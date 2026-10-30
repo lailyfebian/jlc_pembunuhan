@@ -40,22 +40,7 @@
     @endif
 
     @include('layouts.parts.footer')
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ asset('js/main.js') }}"></script>
-    <script>
-        const button = document.getElementById("toggleAbout");
-        const content = document.getElementById("aboutContent");
-        button.addEventListener("click", function() {
-            content.classList.toggle("open");
-            if (content.classList.contains("open")) {
-                button.innerHTML = 'Tutup <i class="bi bi-arrow-up ms-2"></i>';
-            } else {
-                button.innerHTML = 'Baca Selengkapnya <i class="bi bi-arrow-down ms-2"></i>';
-            }
-
-        });
-    </script>
+    
 </body>
 
 </html>
