@@ -1067,6 +1067,8 @@ p {
     }
 
     .about-content {
+        max-height: 165px;
+        margin-bottom: 30px;
     }
 
     .about-content p {
@@ -1080,6 +1082,7 @@ p {
     }
 
     .about-image {
+        margin-top: 35px;
     }
 
     .about-image img {
@@ -1104,6 +1107,8 @@ p {
     }
 
     .about-content {
+        max-height: 150px;
+        margin-bottom: 30px;
     }
 
     .about-content p {
@@ -1135,6 +1140,8 @@ p {
     }
 
     .about-content {
+        max-height: 140px;
+        margin-bottom: 30px;
     }
 
     .about-content p {
