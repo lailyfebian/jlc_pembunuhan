@@ -1,0 +1,1417 @@
+@extends('layouts.generic')
+
+@section('head')
+    <title>Pengacara Pembunuhan, Pengacara Perempuan Pembunuhan, Lawyer Pembunuhan</title>
+    <link rel="canonical" href="{{ url('/') }}" />
+    <meta name="description"
+        content="Pengacara Pembunuhan, Pengacara Perempuan Pembunuhan, dan Lawyer Pembunuhan dari JLC siap memberikan pendampingan hukum profesional dalam penanganan perkara pidana.">
+    <meta property="og:locale" content="id" />
+    <meta property="og:title" content="Pengacara Pembunuhan, Pengacara Perempuan Pembunuhan, Lawyer Pembunuhan" />
+    <meta property="og:description"
+        content="Pengacara Pembunuhan, Pengacara Perempuan Pembunuhan, dan Lawyer Pembunuhan dari JLC siap memberikan pendampingan hukum profesional dalam penanganan perkara pidana." />
+    <meta property="og:site_name" content="Pengacara Pembunuhan, Pengacara Perempuan Pembunuhan, Lawyer Pembunuhan" />
+    <meta property="og:image" content="{{ asset('images/hero-image.webp') }}" />
+    <meta property="og:image:width" content="1280" />
+    <meta property="og:image:height" content="720" />
+    <meta property="og:image:type" content="image/webp" />
+    <meta name="twitter:card" content="Justicia Legal Counsel">
+    <meta name="twitter:title" content="Pengacara Pembunuhan, Pengacara Perempuan Pembunuhan, Lawyer Pembunuhan">
+    <meta name="twitter:description"
+        content="Pengacara Pembunuhan, Pengacara Perempuan Pembunuhan, dan Lawyer Pembunuhan dari JLC siap memberikan pendampingan hukum profesional dalam penanganan perkara pidana.">
+    <meta name="twitter:image" content="{{ asset('images/hero-image.webp') }}">
+    <meta name="twitter:url" content="{{ url('/') }}">
+@endsection
+
+@section('content')
+    <section class="hero-section">
+
+        <div class="container">
+            <div class="row align-items-center gy-5">
+                <div class="col-lg-7 hero-content">
+                    <span class="hero-badge">
+                        JUSTICIA LEGAL COUNSEL
+                    </span>
+                    <h1>
+                        <span>Pengacara Pembunuhan Profesional </span>untuk Pendampingan Hukum Pidana
+
+                    </h1>
+                    <p>
+                        Justicia Legal Counsel (JLC) menyediakan layanan Pengacara Pembunuhan untuk membantu individu dan keluarga yang membutuhkan pendampingan hukum dalam perkara pidana. Kami membantu menghubungkan klien dengan advokat yang sesuai dengan kebutuhan perkara, mulai dari konsultasi awal, penelaahan dokumen, hingga pendampingan dalam proses hukum sesuai ruang lingkup layanan yang disepakati.
+                    </p>
+                    <p>
+                        Perkara pembunuhan membutuhkan pemeriksaan fakta, analisis alat bukti, dan pemahaman terhadap ketentuan hukum yang berlaku. Melalui layanan Lawyer Pembunuhan, JLC membantu klien memahami posisi hukum, hak-hak yang dimiliki, serta pilihan langkah yang dapat ditempuh berdasarkan kondisi perkara.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="https://wa.lawfirm-jlc.com/" class="btn btn-primary-custom">
+                            Konsultasi Sekarang
+                            <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-image">
+                        <img src="{{ asset('images/hero-image.webp') }}" alt="Lawyer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-wrapper">
+        <div class="container">
+            <div class="feature-card">
+                <div class="row g-0">
+                    <div class="col-lg col-md-4 col-6">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <p class="feature-subtitle">Profesional</p>
+                            <p>Pendampingan hukum dilakukan sesuai kompetensi advokat, ketentuan hukum, dan ruang lingkup penugasan yang disepakati.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-4 col-6">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-stars"></i>
+                            </div>
+                            <p class="feature-subtitle">Integritas</p>
+                            <p>Penanganan perkara mengutamakan kejujuran, etika profesi, serta penghormatan terhadap hak-hak hukum klien.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-4 col-6">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-award"></i>
+                            </div>
+                            <p class="feature-subtitle">Komitmen</p>
+                            <p>Setiap kebutuhan hukum ditelaah berdasarkan karakteristik perkara dan informasi yang tersedia untuk membantu menentukan langkah yang relevan.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-6 col-6">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="bi bi-people"></i>
+                            </div>
+                            <p class="feature-subtitle">Terpercaya</p>
+                            <p>Klien memperoleh penjelasan mengenai kebutuhan dokumen, tahapan proses hukum, serta pilihan pendampingan yang dapat dipertimbangkan.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section py-5">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-8">
+                    <span class="about-label">
+                        Tentang Kami
+                    </span>
+                    <h2 class="about-title">
+                        Mengapa Memilih JLC untuk Layanan Pengacara Pembunuhan?
+                    </h2>
+                    <div class="about-content" id="aboutContent">
+                        <p>Memilih pengacara untuk perkara pidana serius memerlukan pertimbangan yang matang. JLC membantu klien menemukan pendamping hukum berdasarkan kebutuhan perkara, sehingga konsultasi dan penanganan hukum dapat dilakukan dengan mempertimbangkan fakta serta prosedur yang berlaku.</p>
+                        <p>Kami mengutamakan komunikasi yang jelas, analisis hukum yang cermat, dan pendampingan profesional agar klien memahami proses yang sedang dihadapi.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="about-image">
+                        <img src="{{ asset('images/gallery/foto-1.webp') }}" alt="Lawyer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-box">
+                <div class="cta-bg"></div>
+                <div class="row align-items-center">
+                    <div class="col-lg-2 col-md-2">
+                        <div class="cta-icon">
+                            <img src="{{ asset('images/icon-scale.webp') }}" alt="Scale">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-6">
+                        <div class="cta-content">
+                            <h4>
+                                Temukan Lawyer & Pengacara Terbaik Sesuai Kebutuhan Anda
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 text-lg-end text-center">
+                        <a href="https://wa.lawfirm-jlc.com/" class="cta-button">
+                            Konsultasi Sekarang
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section id="tim-kami" class="team-section-2">
+    <div class="container">
+        <div class="team-section-2-heading">
+            <span class="team-section-2-subtitle">
+                Lorem Ipsum
+            </span>
+
+            <h5 class="team-section-2-title">
+                Lorem.
+                <span>Ipsum.</span>
+            </h5>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </p>
+
+            <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+</section>
+
+    <section class="why-section">
+        <div class="container">
+            <div class="section-heading">
+                <span class="section-label">Justicia Legal Counsel</span>
+                <h3>Butuh Lawyer Pembunuhan? <br>Temukan Pendamping Hukum yang Sesuai</h3>
+                <p>Tidak semua perkara pidana memiliki fakta dan persoalan hukum yang sama. Karena itu, pemilihan Lawyer Pembunuhan perlu mempertimbangkan kebutuhan pembelaan, tahap penanganan perkara, serta pengalaman dan kompetensi advokat yang akan mendampingi.</p>
+                <p>JLC membantu calon klien mengidentifikasi kebutuhan hukum dan menghubungkannya dengan layanan yang sesuai. Melalui konsultasi awal, Anda dapat menjelaskan situasi yang dihadapi dan memperoleh informasi mengenai langkah hukum yang mungkin ditempuh.</p>
+            </div>
+            <div class="row justify-content-center gy-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <i class="bi bi-chat-dots"></i>
+                        </div>
+                        <div class="why-content">
+                            <p class="why-title">Konsultasi Hukum Lebih Mudah</p>
+                            <p>
+                                Sampaikan gambaran umum perkara dan kebutuhan pendampingan kepada tim JLC. Informasi tersebut menjadi langkah awal untuk mengidentifikasi persoalan hukum yang perlu ditelaah lebih lanjut.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <i class="bi bi-person"></i>
+                        </div>
+                        <div class="why-content">
+                            <p class="why-title">Pendampingan Sesuai Kebutuhan Perkara</p>
+                            <p>Ruang lingkup pendampingan dapat mencakup konsultasi, penelaahan dokumen, pendampingan pemeriksaan, persiapan pembelaan, hingga proses persidangan sesuai kesepakatan dan ketentuan yang berlaku.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="why-item">
+                        <div class="why-icon">
+                            <i class="bi bi-shield-check"></i>
+                        </div>
+                        <div class="why-content">
+                            <p class="why-title">Perlindungan Hak Hukum</p>
+                            <p>Advokat membantu klien memahami hak dan kewajiban selama proses pidana. Setiap langkah dipertimbangkan berdasarkan fakta, bukti, dan aturan hukum yang relevan.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section class="layanan-pidana-section">
+    <div class="container">
+        <!-- Section Heading -->
+        <div class="layanan-header">
+            <div class="layanan-heading-content">
+                <h2>
+                    Layanan Pengacara Pembunuhan
+                    <br class="d-none d-md-block">
+                    dan Litigasi Pidana JLC
+                </h2>
+                <p>
+                    JJLC menyediakan layanan litigasi pidana yang mencakup berbagai jenis perkara pidana umum dan pidana khusus. Perkara pembunuhan merupakan salah satu jenis perkara yang termasuk dalam cakupan layanan litigasi pidana pada website JLC.
+                </p>
+            </div>
+        </div>
+
+        <!-- Service Cards -->
+        <div class="row g-3 layanan-card-row">
+
+            <!-- Card 1 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="layanan-card">
+                    <div class="layanan-card-image">
+                        <img
+                            src="{{ asset('images/layanan-pengacara-1.webp') }}"
+                            alt="Pendampingan perkara pembunuhan"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="layanan-card-body">
+                        <div class="layanan-card-icon">
+                            <img
+                                src="{{ asset('images/icon-1.svg') }}"
+                                alt=""
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="why-content">
+                        <p class="why-title">Pendampingan Perkara Pembunuhan</p>
+
+                        <p>
+                            JLC membantu klien memperoleh konsultasi dan pendampingan hukum terkait dugaan tindak pidana pembunuhan. Penanganan perkara dapat melibatkan penelaahan kronologi, dokumen hukum, keterangan saksi, dan alat bukti yang relevan.
+                        </p>
+                    </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="layanan-card">
+                    <div class="layanan-card-image">
+                        <img
+                            src="{{ asset('images/layanan-pengacara-2.webp') }}"
+                            alt="Pendampingan pada tahap pemeriksaan"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="layanan-card-body">
+                        <div class="layanan-card-icon">
+                            <img
+                                src="{{ asset('images/icon-2.svg') }}"
+                                alt=""
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="why-content">
+                        <p class="why-title">Pendampingan pada Tahap Pemeriksaan</p>
+
+                        <p>
+                            Dalam tahap penyelidikan dan penyidikan, advokat dapat membantu klien memahami prosedur pemeriksaan dan hak-hak hukumnya serta memberikan pendampingan sesuai ketentuan hukum acara pidana yang berlaku.
+                        </p>
+                    </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="layanan-card">
+                    <div class="layanan-card-image">
+                        <img
+                            src="{{ asset('images/layanan-pengacara-3.webp') }}"
+                            alt="Pendampingan persidangan pidana"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="layanan-card-body">
+                        <div class="layanan-card-icon">
+                            <img
+                                src="{{ asset('images/icon-3.svg') }}"
+                                alt=""
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="why-content">
+                        <p class="why-title">Pendampingan Persidangan</p>
+
+
+                        <p>
+                            Apabila perkara berlanjut ke pengadilan, pendampingan dapat mencakup penelaahan surat dakwaan, analisis alat bukti, pemeriksaan keterangan saksi, penyusunan argumentasi hukum, serta pembelaan sesuai fakta dan ketentuan hukum.
+                        </p>
+                    </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-12 col-sm-6 col-lg-3">
+                <article class="layanan-card">
+                    <div class="layanan-card-image">
+                        <img
+                            src="{{ asset('images/layanan-pengacara-4.webp') }}"
+                            alt="Konsultasi hukum bagi keluarga"
+                            loading="lazy"
+                        >
+                    </div>
+
+                    <div class="layanan-card-body">
+                        <div class="layanan-card-icon">
+                            <img
+                                src="{{ asset('images/icon-4.svg') }}"
+                                alt=""
+                                loading="lazy"
+                            >
+                        </div>
+                        <div class="why-content">
+                        <p class="why-title">Konsultasi bagi Keluarga</p>
+
+                        <p>
+                            Keluarga pihak yang diperiksa atau didakwa dapat berkonsultasi untuk memahami proses hukum, dokumen yang diperlukan, serta pilihan pendampingan yang tersedia berdasarkan posisi hukum masing-masing.
+                        </p>
+                    </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-12 text-center mt-4">
+                <a href="https://wa.lawfirm-jlc.com/" class="consult-btn px-5 py-3">
+                    Konsultasikan Perkara Anda
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="choose-section">
+        <div class="container">
+            <div class="row align-items-center gy-lg-5">
+                <div class="col-lg-5">
+                    <div class="choose-image">
+                        <img src="{{ asset('images/gallery/galeri/pengacara-perempuan.jpeg') }}" alt="Mengapa Memilih Justicia Legal Counsel">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <h4 class="choose-heading text-lg-start text-center">
+                        Pengacara Perempuan Pembunuhan <span>untuk Kebutuhan Pendampingan Hukum</span>
+                    </h4>
+                    <p>Sebagian klien mungkin memiliki preferensi untuk berkonsultasi dengan advokat perempuan ketika menghadapi perkara pidana. JLC dapat menerima permintaan tersebut dan membantu mengonfirmasi ketersediaan serta kesesuaian penugasan advokat berdasarkan kebutuhan klien.</p>
+                    <p>Layanan <b>Pengacara Perempuan Pembunuhan</b> tetap mengutamakan kompetensi profesional, integritas, kerahasiaan sesuai kewajiban profesi, dan penghormatan terhadap hak-hak hukum setiap klien.</p>
+                </div>
+                <!-- Dua cards -->
+                <div class="row g-3 choose-feature-row">
+
+                <!-- Card 1 -->
+                <div class="col-md-6">
+                    <div class="choose-feature-card">
+                        <div class="choose-feature-icon">
+                            <img
+                                src="{{ asset('images/icon-5.svg') }}"
+                                alt=""
+                                aria-hidden="true"
+                            >
+                        </div>
+
+                        <div class="why-content">
+                            <p class="why-title">Pendampingan dengan Komunikasi yang Jelas</p>
+
+                            <p>
+                                Klien berhak memahami proses hukum yang sedang dihadapi. Advokat membantu menjelaskan persoalan, dokumen yang perlu diperiksa, dan pilihan langkah yang relevan agar klien dapat mengambil keputusan berdasarkan informasi yang memadai.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6">
+                    <div class="choose-feature-card">
+                        <div class="choose-feature-icon">
+                            <img
+                                src="{{ asset('images/icon-6.svg') }}"
+                                alt=""
+                                aria-hidden="true"
+                            >
+                        </div>
+
+                        <div class="why-content">
+                            <p class="why-title">Penanganan Berdasarkan Fakta dan Bukti</p>
+
+                            <p>
+                                Perkara pembunuhan memerlukan penilaian yang teliti terhadap kronologi kejadian, keterangan saksi, alat bukti, dan ketentuan pidana yang relevan. Analisis dilakukan sesuai informasi yang tersedia dan perkembangan perkara.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="legal-services-section py-5">
+        <div class="container">
+            <div class="section-heading text-center mb-5">
+                <span class="section-badge">LAYANAN HUKUM PROFESIONAL</span>
+                <h2 class="section-title mt-3">Program & Layanan Hukum <span>Justicia Legal Counsel</span></h2>
+                <p class="section-description">
+                    Justicia Legal Counsel menghadirkan berbagai layanan hukum profesional untuk membantu individu, pelaku
+                    usaha, maupun perusahaan menemukan lawyer terbaik sesuai kebutuhan. Mulai dari konsultasi hukum hingga
+                    pendampingan perkara, kami menghubungkan Anda dengan pengacara berpengalaman yang siap memberikan solusi
+                    hukum secara tepat, cepat, dan terpercaya.
+                </p>
+            </div>
+
+            <div class="row mt-5 g-4" id="servicesWrapper">
+                <div id="tun" class="col-lg-4 col-md-6 service-item">
+                    <div class="service-card">
+                        <div class="service-top">
+                            <div class="service-icon">
+                                <i class="bi bi-bank2"></i>
+                            </div>
+                            <p class="services-title">Hukum Tata Usaha Negara (TUN)</p>
+                        </div>
+                        <p>Hukum Tata Usaha Negara (TUN) meliputi:</p>
+                        <ul>
+                            <li>Pertanahan</li>
+                            <li>Kepegawaian</li>
+                            <li>Perizinan</li>
+                            <li>Lingkungan Hidup</li>
+                            <li>Tender / Pengadaan Barang Jasa</li>
+                            <li>Badan Hukum / Partai Politik</li>
+                            <li>Kepala Desa Dan Perangkat Desa</li>
+                            <li>Kepala Daerah</li>
+                            <li>Proses Pemilihan Umum</li>
+                            <li>Pergantian Antar Waktu</li>
+                            <li>Ketenagakerjaan</li>
+                            <li>Sengketa Informasi Publik / KIP</li>
+                            <li>Pengadaan Tanah</li>
+                            <li>Penyalahgunaan Wewenang</li>
+                            <li>Tindakan Administrasi Pemerintahan</li>
+                            <li>Mahkamah Konstitusi</li>
+                            <li>Perselisihan Hasil Pemilu</li>
+                            <li>Sengketa Kewenangan</li>
+                            <li>Merk</li>
+                            <li>Dan lain-lain</li>
+                        </ul>
+                        <a href="https://wa.lawfirm-jlc.com/?kebutuhan=Hukum TUN" class="service-btn">
+                            Konsultasi Sekarang
+                        </a>
+                    </div>
+                </div>
+                <div id="keluarga" class="col-lg-4 col-md-6 service-item">
+                    <div class="service-card">
+                        <div class="service-top">
+                            <div class="service-icon gold">
+                                <i class="bi bi-house-heart-fill"></i>
+                            </div>
+                            <p class="services-title">Hukum Keluarga</p>
+                        </div>
+                        <p>Hukum Keluarga meliputi:</p>
+                        <ul>
+                            <li>Cerai Talak/Cerai Gugat</li>
+                            <li>Hak Asuh anak</li>
+                            <li>Gugatan Pembagian Harta Gono Gini (Harta Bersama)</li>
+                            <li>Penetapan Ahli Waris (PAW)</li>
+                            <li>Gugatan Waris</li>
+                            <li>Pembatalan Perkawinan</li>
+                            <li>Pernikahan Anak dibawah Umur/Dispensasi Nikah</li>
+                            <li>Permohonan Isbat Nikah dan Isbat Nikah Kontensius/Pengesahan Perkawinan</li>
+                            <li>Pengangkatan Anak/Adopsi Anak</li>
+                            <li>Perwalian Anak</li>
+                            <li>Permohonan Asal Usul Anak/Pengesahan/Pengakuan Anak</li>
+                            <li>Pengampuan</li>
+                            <li>Ekonomi Syariah</li>
+                            <li>Kekerasan Dalam Rumah Tangga(KDRT)</li>
+                            <li>Perzinahan / Overspel</li>
+                            <li>Poligami</li>
+                            <li>Perjanjian Perkawinan</li>
+                            <li>Dan lain-lain</li>
+                        </ul>
+                        <a href="https://wa.lawfirm-jlc.com/?kebutuhan=Hukum Keluarga" class="service-btn">
+                            Konsultasi Sekarang
+                        </a>
+                    </div>
+                </div>
+                <div id="notaris" class="col-lg-4 col-md-6 service-item">
+                    <div class="service-card">
+                        <div class="service-top">
+                            <div class="service-icon">
+                                <i class="bi bi-file-earmark-richtext-fill"></i>
+                            </div>
+                            <p class="services-title">Jasa Notaris & PPAT</p>
+                        </div>
+                        <p>Jasa Notaris meliputi:</p>
+                        <ul>
+                            <li>Akta Pendirian PT</li>
+                            <li>Perubahan PT</li>
+                            <li>Yayasan</li>
+                            <li>CV</li>
+                            <li>Firma</li>
+                            <li>Perjanjian Kerjasama</li>
+                            <li>Akta Hutang Piutang</li>
+                            <li>Kuasa Menjual</li>
+                            <li>Surat Wasiat</li>
+                            <li>Legalisasi / Waarmerking</li>
+                        </ul>
+                        <p class="mt-3">PPAT meliputi:</p>
+                        <ul>
+                            <li>AJB</li>
+                            <li>APHT</li>
+                            <li>Roya</li>
+                            <li>Balik Nama Sertifikat</li>
+                            <li>Pemecahan Sertifikat</li>
+                            <li>Penggabungan Sertifikat</li>
+                            <li>Hibah Tanah</li>
+                            <li>Tukar Menukar</li>
+                            <li>Peningkatan SHGB ke SHM</li>
+                            <li>SKMHT</li>
+                        </ul>
+                        <a href="https://wa.lawfirm-jlc.com/?kebutuhan=Jasa Notaris & PPAT" class="service-btn">
+                            Konsultasi Sekarang
+                        </a>
+                    </div>
+                </div>
+                <div id="corporate" class="col-lg-4 col-md-6 service-item">
+                    <div class="service-card">
+                        <div class="service-top">
+                            <div class="service-icon gold">
+                                <i class="bi bi-buildings-fill"></i>
+                            </div>
+                            <p class="services-title">Corporate & Business</p>
+                        </div>
+                        <p>Corporate & Business meliputi:</p>
+                        <ul>
+                            <li>Retainer Perusahaan</li>
+                            <li>Corporate Legal</li>
+                            <li>Perselisihan Hubungan Industrial (PHI)</li>
+                            <li>Dan lain-lain</li>
+                        </ul>
+                        <a href="https://wa.lawfirm-jlc.com/?kebutuhan=Corporate & Business" class="service-btn">
+                            Konsultasi Sekarang
+                        </a>
+                    </div>
+                </div>
+                <div id="arbitrase" class="col-lg-4 col-md-6 service-item">
+                    <div class="service-card">
+                        <div class="service-top">
+                            <div class="service-icon">
+                                <i class="bi bi-file-earmark-check-fill"></i>
+                            </div>
+                            <p class="services-title">Arbitrase</p>
+                        </div>
+                        <p>Arbitrase meliputi:</p>
+                        <ul>
+                            <li>Sengketa Perdagangan</li>
+                            <li>Arbitrase Institusionnal</li>
+                            <li>Arbitrase Ad Hoc</li>
+                            <li>Dan lain-lain</li>
+                        </ul>
+                        <a href="https://wa.lawfirm-jlc.com/?kebutuhan=Arbitrase" class="service-btn">
+                            Konsultasi Sekarang
+                        </a>
+                    </div>
+                </div>
+                <div id="pajak" class="col-lg-4 col-md-6 service-item">
+                    <div class="service-card">
+                        <div class="service-top">
+                            <div class="service-icon gold">
+                                <i class="bi bi-receipt"></i>
+                            </div>
+                            <p class="services-title">Hukum Pajak</p>
+                        </div>
+                        <p>Hukum Pajak meliputi:</p>
+                        <ul>
+                            <li>Banding Pajak</li>
+                            <li>Keberatan Pajak</li>
+                            <li>Gugatan Pajak</li>
+                            <li>Pidana Pajak</li>
+                            <li>Peninjauan Kembali</li>
+                            <li>Dan lain-lain</li>
+                        </ul>
+                        <a href="https://wa.lawfirm-jlc.com/?kebutuhan=Hukum Pajak" class="service-btn">
+                            Konsultasi Sekarang
+                        </a>
+                    </div>
+                </div>
+                <div id="pidana" class="col-lg-4 col-md-6 service-item">
+                    <div class="service-card">
+                        <div class="service-top">
+                            <div class="service-icon">
+                                <i class="bi bi-shield"></i>
+                            </div>
+                            <p class="services-title">Litigasi Pidana</p>
+                        </div>
+                        <p>Hukum Pidana Umum meliputi:</p>
+                        <ul>
+                            <li>Pembunuhan</li>
+                            <li>Pencurian</li>
+                            <li>Penipuan</li>
+                            <li>Penggelapan</li>
+                            <li>Pemalsuan Dokumen</li>
+                            <li>Perampokan</li>
+                            <li>Penganiayaan</li>
+                            <li>Dan lain-lain</li>
+                        </ul>
+                        <p class="mt-3">Hukum Pidana Khusus meliputi:</p>
+                        <ul>
+                            <li>Tindak Pidana Korupsi (TIPIKOR)</li>
+                            <li>Tindak Pidana Narkotika</li>
+                            <li>Tindak Pidana Berat Pelanggaran HAM</li>
+                            <li>Tindak Pidana Terorisme dan Tindak Pidana Pencucian Uang (TPPU)</li>
+                            <li>Dan lain-lain</li>
+                        </ul>
+                        <a href="https://wa.lawfirm-jlc.com/?kebutuhan=Litigasi Pidana" class="service-btn">
+                            Konsultasi Sekarang
+                        </a>
+                    </div>
+                </div>
+                <div id="perdata" class="col-lg-4 col-md-6 service-item">
+                    <div class="service-card">
+                        <div class="service-top">
+                            <div class="service-icon gold">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <p class="services-title">Litigasi Perdata</p>
+                        </div>
+                        <p>Hukum Perdata Umum meliputi:</p>
+                        <ul>
+                            <li>Perbuatan Melawan Hukum (PMH)</li>
+                            <li>Wanprestasi</li>
+                            <li>Gugatan Sederhana</li>
+                            <li>Perceraian (Non Muslim)</li>
+                            <li>Perubahan Identitas (Volunter)</li>
+                            <li>Dan lain-lain</li>
+                        </ul>
+                        <p class="mt-3">Hukum Perdata Khusus meliputi:</p>
+                        <ul>
+                            <li>Kepailitan</li>
+                            <li>Penundaan Kewajiban Pembayaran Utang (PKPU)</li>
+                            <li>Hak Kekayaan Intelektual (HAKI)</li>
+                            <li>Perselisihan Hubungan Industrial (PHI)</li>
+                            <li>Komisi Pengawas Persaingan Usaha (KPPU)</li>
+                            <li>Dan lain-lain</li>
+                        </ul>
+                        <a href="https://wa.lawfirm-jlc.com/?kebutuhan=Litigasi Perdata" class="service-btn">
+                            Konsultasi Sekarang
+                        </a>
+                    </div>
+                </div>
+                <div id="upaya-hukum" class="col-lg-4 col-md-6 service-item">
+                    <div class="service-card">
+                        <div class="service-top">
+                            <div class="service-icon">
+                                <i class="bi bi-journal-text"></i>
+                            </div>
+                            <p class="services-title">Upaya Hukum</p>
+                        </div>
+                        <p>Upaya Hukum meliputi:</p>
+                        <ul>
+                            <li>Upaya Hukum Verzet (Perlawanan atas Putusan Verstek)</li>
+                            <li>Upaya Hukum Banding (Perlawanan atas Putusan Pertama/Pengadilan Negeri)</li>
+                            <li>Upaya Hukum Kasasi (Perlawanan terhadap Putusan Banding)</li>
+                            <li>Upaya Hukum Peninjauan Kembali/PK (Perlawanan atas Putusan Banding)</li>
+                            <li>Dan lain-lain</li>
+                        </ul>
+                        <a href="https://wa.lawfirm-jlc.com/?kebutuhan=Upaya Hukum" class="service-btn">
+                            Konsultasi Sekarang
+                        </a>
+                    </div>
+                </div>
+                <div id="perizinan" class="col-lg-4 col-md-6 service-item">
+                    <div class="service-card">
+                        <div class="service-top">
+                            <div class="service-icon gold">
+                                <i class="bi bi-file-earmark-richtext-fill"></i>
+                            </div>
+                            <p class="services-title">Perizinan Usaha</p>
+                        </div>
+                        <p>Biro Jasa meliputi:</p>
+                        <ul>
+                            <li>Pembuatan NIB</li>
+                            <li>NPWP Badan</li>
+                            <li>Sertifikat Standar OSS</li>
+                            <li>Perubahan Data OSS</li>
+                            <li>Izin Reklame</li>
+                            <li>Izin Operasional</li>
+                            <li>SK Kemenkumham</li>
+                            <li>Perizinan Berusaha Berbasis Risiko</li>
+                        </ul>
+                        <a href="https://wa.lawfirm-jlc.com/?kebutuhan=Perizinan Usaha" class="service-btn">
+                            Konsultasi Sekarang
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottom-consultation mt-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-8">
+                        <div class="consult-left">
+                            <div class="consult-icon">
+                                <img src="{{ asset('images/icon-scale.webp') }}" alt="Scale CTA">
+                            </div>
+                            <div>
+                                <h5>
+                                    Tidak Menemukan Layanan yang Anda Cari?
+                                </h5>
+                                <p>
+                                    Tim kami siap membantu menemukan lawyer terbaik
+                                    sesuai kebutuhan hukum Anda.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+                        <a href="https://wa.lawfirm-jlc.com/" class="consult-btn">
+                            Hubungi Sekarang
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="tim-kami" class="team-section-2">
+    <div class="container">
+        <div class="team-section-2-heading">
+            <span class="team-section-2-subtitle">
+                Lorem Ipsum
+            </span>
+
+            <h5 class="team-section-2-title">
+                Lorem.
+                <span>Ipsum.</span>
+            </h5>
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </p>
+
+            <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+    </div>
+</section>
+    <section class="jlc-advantage-section">
+        <div class="container">
+            <div class="jlc-advantage-wrapper">
+                <div class="row g-0 align-items-center">
+                    <div class="jlc-advantage-body">
+                        <div class="jlc-advantage-header">
+                            <span class="jlc-advantage-subtitle">
+                                KEUNGGULAN
+                            </span>
+                            <h3 class="jlc-advantage-title">
+                                Mengapa Memilih
+                                <span>
+                                    Justicia Legal Counsel?
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="jlc-advantage-timeline">
+                            <span class="jlc-advantage-line"></span>
+                            <div class="row">
+                                <div class="col-lg-6 jlc-advantage-column">
+                                    <article class="jlc-advantage-item">
+                                        <div class="jlc-advantage-icon">
+                                            <i class="bi bi-person-workspace"></i>
+                                        </div>
+                                        <div class="jlc-advantage-content">
+                                            <span class="jlc-advantage-number">01</span>
+                                            <p class="jlc-advantage-heading">Lawyer Sesuai Kebutuhan Perkara</p>
+                                            <p class="jlc-advantage-text">
+                                                JLC membantu menghubungkan calon klien dengan layanan advokat berdasarkan bidang hukum yang dibutuhkan, termasuk perkara pembunuhan dalam lingkup litigasi pidana.
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article class="jlc-advantage-item">
+                                        <div class="jlc-advantage-icon">
+                                            <i class="bi bi-bullseye"></i>
+                                        </div>
+                                        <div class="jlc-advantage-content">
+                                            <span class="jlc-advantage-number">02</span>
+                                            <p class="jlc-advantage-heading">Analisis Hukum yang Cermat</p>
+                                            <p class="jlc-advantage-text">
+                                                Informasi dan dokumen perkara dapat ditelaah untuk mengidentifikasi persoalan hukum, hak-hak klien, serta pilihan langkah yang relevan.
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article class="jlc-advantage-item">
+                                        <div class="jlc-advantage-icon">
+                                            <i class="bi bi-chat-dots"></i>
+                                        </div>
+                                        <div class="jlc-advantage-content">
+                                            <span class="jlc-advantage-number">03</span>
+                                            <p class="jlc-advantage-heading">Konsultasi Hukum</p>
+                                            <p class="jlc-advantage-text">
+                                                Klien dapat menyampaikan kebutuhan pendampingan untuk memperoleh penjelasan awal mengenai proses hukum dan layanan yang sesuai.
+                                            </p>
+                                        </div>
+                                    </article>
+                                </div>
+
+                                <div class="col-lg-6 jlc-advantage-column">
+                                    <article class="jlc-advantage-item">
+                                        <div class="jlc-advantage-icon">
+                                            <i class="bi bi-person-check"></i>
+                                        </div>
+                                        <div class="jlc-advantage-content">
+                                            <span class="jlc-advantage-number">04</span>
+                                            <p class="jlc-advantage-heading">Pendampingan Berdasarkan Ruang Lingkup Layanan</p>
+                                            <p class="jlc-advantage-text">
+                                                Pendampingan dapat dilakukan sesuai tahap perkara dan kesepakatan penugasan, mulai dari konsultasi hingga proses persidangan apabila termasuk dalam layanan yang disepakati.
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article class="jlc-advantage-item">
+                                        <div class="jlc-advantage-icon">
+                                            <i class="bi bi-folder2-open"></i>
+                                        </div>
+                                        <div class="jlc-advantage-content">
+                                            <span class="jlc-advantage-number">05</span>
+                                            <p class="jlc-advantage-heading">Komunikasi yang Transparan</p>
+                                            <p class="jlc-advantage-text">
+                                                JLC mengutamakan penjelasan mengenai kebutuhan layanan, tahapan penanganan, dan ruang lingkup pekerjaan agar klien dapat memahami proses pendampingan.
+                                            </p>
+                                        </div>
+                                    </article>
+                                    <article class="jlc-advantage-item">
+                                        <div class="jlc-advantage-icon">
+                                            <i class="bi bi-shield-check"></i>
+                                        </div>
+                                        <div class="jlc-advantage-content">
+                                            <span class="jlc-advantage-number">06</span>
+                                            <p class="jlc-advantage-heading">Mengutamakan Kepentingan Hukum Klien</p>
+                                            <p class="jlc-advantage-text">
+                                                Setiap langkah penanganan mempertimbangkan fakta, bukti, aturan yang berlaku, serta hak dan kepentingan hukum klien.
+                                            </p>
+                                        </div>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tim-kami" class="team-section-2">
+        <div class="container">
+            <div class="team-section-2-heading">
+                <span class="team-section-2-subtitle">
+                    Tim Pengacara
+                </span>
+                <h5 class="team-section-2-title">
+                    Profesional.
+                    <span>Berpengalaman.</span>
+                    Berdedikasi.
+                </h5>
+                <p>
+                    Perkara pidana memerlukan pendampingan yang mempertimbangkan karakteristik kasus dan kebutuhan klien. JLC memiliki tim advokat dengan bidang keahlian yang dapat ditinjau untuk membantu calon klien menentukan kebutuhan konsultasi dan pendampingan hukum.
+                </p>
+                <p>
+                    Untuk perkara pembunuhan, calon klien dapat menyampaikan informasi awal mengenai perkara dan menanyakan advokat yang sesuai dengan kebutuhan penanganan.
+                </p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-section-2-card">
+                        <div class="team-section-2-image">
+                            <img src="{{ asset('images/advokat/team-1.jpeg') }}" alt="Adv, Dodi dirgantara, S.H">
+                        </div>
+                        <div class="team-section-2-content">
+                            <p class="team-name">Adv. Dodi dirgantara, S.H</p>
+                            <span>Advokat</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-section-2-card">
+                        <div class="team-section-2-image">
+                            <img src="{{ asset('images/advokat/team-7.jpeg') }}" alt="Syahra Irfani, S.H.">
+                        </div>
+                        <div class="team-section-2-content">
+                            <p class="team-name">Adv. Syahra Irfani, S.H.</p>
+                            <span>Advokat</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-section-2-card">
+                        <div class="team-section-2-image">
+                            <img src="{{ asset('images/advokat/team-2.jpeg') }}" alt="Adv, Askan Nor S.H.,M.H">
+                        </div>
+                        <div class="team-section-2-content">
+                            <p class="team-name">Adv. Askan Nor S.H.,M.H</p>
+                            <span>Advokat</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-section-2-card">
+                        <div class="team-section-2-image">
+                            <img src="{{ asset('images/advokat/team-3.jpeg') }}" alt="Riski Ari Wibowo, S.H.">
+                        </div>
+                        <div class="team-section-2-content">
+                            <p class="team-name">Adv. Riski Ari Wibowo, S.H.</p>
+                            <span>Advokat</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-section-2-card">
+                        <div class="team-section-2-image">
+                            <img src="{{ asset('images/advokat/team-4.jpeg') }}" alt="Fadhillah Ahmad Nahrawi, S.H">
+                        </div>
+                        <div class="team-section-2-content">
+                            <p class="team-name">Adv. Fadhillah Ahmad Nahrawi, S.H</p>
+                            <span>Advokat</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-section-2-card">
+                        <div class="team-section-2-image">
+                            <img src="{{ asset('images/advokat/team-5.jpg') }}" alt="Ahmad Said Fandi, S.H.">
+                        </div>
+                        <div class="team-section-2-content">
+                            <p class="team-name">Adv. Ahmad Said Fandi, S.H.</p>
+                            <span>Advokat</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-section-2-card">
+                        <div class="team-section-2-image">
+                            <img src="{{ asset('images/advokat/team-6.jpeg') }}" alt="Muhammad Fawwazul Haqie, S.H.">
+                        </div>
+                        <div class="team-section-2-content">
+                            <p class="team-name">Adv. Muhammad Fawwazul Haqie, S.H.</p>
+                            <span>Advokat</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="team-section-2-card">
+                        <div class="team-section-2-image">
+                            <img src="{{ asset('images/advokat/team-8.jpeg') }}" alt="Adv. Wandra Saputra, SH">
+                        </div>
+                        <div class="team-section-2-content">
+                            <p class="team-name">Adv. Wandra Saputra, SH</p>
+                            <span>Advokat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section class="jlc-gallery-section">
+    <div class="container-fluid px-lg-5">
+
+        <!-- Heading -->
+        <div class="gallery-heading text-center">
+            <div class="gallery-eyebrow">
+                <span></span>
+                GALERI
+                <span></span>
+            </div>
+
+            <h2>
+                Dokumentasi Kegiatan
+                <span>Justicia Legal Counsel</span>
+            </h2>
+
+            <p>
+                Berbagai kegiatan, konsultasi, dan pendampingan hukum
+                yang telah kami lakukan bersama klien di berbagai jenis perkara.
+            </p>
+        </div>
+
+        <!-- Gallery Page 1 -->
+        <div class="gallery-page active" id="gallery-page-1">
+            <div class="gallery-grid">
+
+                <div class="gallery-item gallery-wide" data-category="konsultasi">
+                    <img src="{{ asset('images/gallery/galeri/galeri-landscape-1.jpeg') }}" alt="Diskusi dan Konsultasi Hukum">
+                </div>
+
+                <div class="gallery-item" data-category="konsultasi">
+                    <img src="{{ asset('images/gallery/galeri/galeri-landscape-2.jpeg') }}" alt="Penelaahan Dokumen Perkara">
+                </div>
+
+                <div class="gallery-item" data-category="lainnya">
+                    <img src="{{ asset('images/gallery/galeri/galeri-landscape-3.jpeg') }}" alt="Pertemuan dan Koordinasi">
+                </div>
+
+                <div class="gallery-item gallery-wide" data-category="persidangan">
+                    <img src="{{ asset('images/gallery/galeri/galeri-landscape-4.jpeg') }}" alt="Pendampingan Persidangan">
+                </div>
+
+                <div class="gallery-item" data-category="persidangan">
+                    <img src="{{ asset('images/gallery/galeri/galeri-landscape-5.jpeg') }}" alt="Dokumentasi Proses Hukum">
+                </div>
+
+                <div class="gallery-item gallery-wide" data-category="konsultasi">
+                    <img src="{{ asset('images/gallery/galeri/galeri-landscape-6.jpeg') }}" alt="Diskusi Bersama Tim Advokat">
+                </div>
+
+                <div class="gallery-item" data-category="lainnya">
+                    <img src="{{ asset('images/gallery/galeri/galeri-landscape-7.jpeg') }}" alt="Referensi dan Kajian Hukum">
+                </div>
+
+                <div class="gallery-item gallery-wide" data-category="konsultasi">
+                    <img src="{{ asset('images/gallery/galeri/galeri-landscape-8.jpeg') }}" alt="Pendampingan dan Konsultasi Klien">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Gallery Page 2 -->
+        <div class="gallery-page" id="gallery-page-2">
+            <div class="gallery-grid">
+
+                @for ($i = 1; $i <= 8; $i++)
+                    <div class="gallery-item" data-category="lainnya">
+                        <img src="{{ asset('images/gallery/galeri/galeri-' . $i . '.jpeg') }}"
+                             alt="Dokumentasi kegiatan Justicia Legal Counsel {{ $i }}">
+                    </div>
+                @endfor
+
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="gallery-pagination">
+            <button class="page-dot active" data-page="1" aria-label="Halaman 1"></button>
+            <button class="page-dot" data-page="2" aria-label="Halaman 2"></button>
+        </div>
+
+    </div>
+</section>
+
+
+    <section id="kontak" class="cta-section-2">
+        <div class="container">
+            <div class="cta-section-2-wrapper">
+                <div class="row align-items-center">
+                    <div class="col-lg-5">
+                        <div class="cta-section-2-left">
+                            <h4 class="cta-section-2-title">Jangan Hadapi
+                                <span>
+                                    Masalah Hukum Sendirian.
+                                </span>
+                            </h4>
+                            <p class="cta-section-2-subtitle">Temukan Pengacara Terbaik Bersama <b>Justicia Legal
+                                    Counsel</b></p>
+                            <div class="cta-section-2-divider"></div>
+                            <div class="cta-section-2-list">
+                                <div class="cta-section-2-list-item">
+                                    <i class="bi bi-shield-check"></i>
+                                    <span>
+                                        Aman dan Profesional
+                                    </span>
+                                </div>
+                                <div class="cta-section-2-list-item">
+                                    <i class="bi bi-clock-history"></i>
+                                    <span>
+                                        Komunikatif
+                                    </span>
+                                </div>
+                                <div class="cta-section-2-list-item">
+                                    <i class="bi bi-people"></i>
+                                    <span>
+                                        Sesuai Kebutuhan Hukum
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="cta-section-2-center">
+                            <p class="cta-section-2-description">
+                                Menghadapi perkara pembunuhan dapat menimbulkan pertanyaan mengenai hak hukum, prosedur pemeriksaan, dan langkah yang perlu dilakukan. Mendapatkan penjelasan dari advokat sejak awal dapat membantu Anda memahami situasi dan mempertimbangkan keputusan secara lebih matang.
+                            </p>
+                            <p class="cta-section-2-description">
+                                Justicia Legal Counsel siap membantu Anda mencari layanan pendampingan hukum yang sesuai dengan kebutuhan perkara. Hubungi JLC untuk mendiskusikan situasi yang dihadapi dan mengonfirmasi ruang lingkup layanan yang tersedia.
+                            </p>
+                            <a href="https://wa.lawfirm-jlc.com/" class="cta-section-2-button">
+                                <i class="bi bi-calendar-check"></i>
+                                <span>
+                                    Konsultasi Sekarang
+                                </span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<section class="faq-section">
+    <div class="container">
+
+        <!-- Header FAQ -->
+        <div class="faq-header">
+            <div class="faq-subtitle">
+                <span></span>
+                FAQ
+            </div>
+
+            <h2>
+                FAQ Pengacara
+                <span>Pembunuhan</span>
+            </h2>
+
+            <p>
+                Temukan jawaban atas pertanyaan yang sering diajukan
+                mengenai layanan Pengacara Pembunuhan di
+                Justicia Legal Counsel.
+            </p>
+        </div>
+
+        <!-- FAQ Accordion -->
+        <div class="faq-wrapper">
+            <div class="accordion" id="faqAccordion">
+
+                <!-- FAQ 1 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingOne">
+                        <button class="accordion-button"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqOne"
+                            aria-expanded="true"
+                            aria-controls="faqOne">
+
+                            <span class="faq-number">01</span>
+
+                            <span class="faq-question">
+                                Apa tugas Pengacara Pembunuhan?
+                            </span>
+
+                        </button>
+                    </h3>
+
+                    <div id="faqOne"
+                        class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+                            Pengacara pembunuhan memberikan bantuan hukum
+                            dalam perkara pidana terkait dugaan tindak
+                            pidana pembunuhan. Ruang lingkupnya dapat
+                            meliputi konsultasi, penelaahan dokumen,
+                            pendampingan pemeriksaan, penyusunan pembelaan,
+                            dan pendampingan persidangan sesuai penugasan.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqTwo"
+                            aria-expanded="false"
+                            aria-controls="faqTwo">
+
+                            <span class="faq-number">02</span>
+
+                            <span class="faq-question">
+                                Apakah JLC menyediakan Pengacara Perempuan Pembunuhan?
+                            </span>
+
+                        </button>
+                    </h3>
+
+                    <div id="faqTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+                            Anda dapat menyampaikan preferensi untuk
+                            didampingi advokat perempuan kepada tim JLC.
+                            Ketersediaan dan kesesuaian penugasan perlu
+                            dikonfirmasi sebelum layanan disepakati.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqThree"
+                            aria-expanded="false"
+                            aria-controls="faqThree">
+
+                            <span class="faq-number">03</span>
+
+                            <span class="faq-question">
+                                Kapan sebaiknya menghubungi Lawyer Pembunuhan?
+                            </span>
+
+                        </button>
+                    </h3>
+
+                    <div id="faqThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+                            Anda dapat berkonsultasi ketika menerima
+                            panggilan pemeriksaan, mengetahui adanya
+                            proses pidana yang berkaitan dengan diri
+                            sendiri atau keluarga, atau membutuhkan
+                            penjelasan tentang hak hukum dalam suatu
+                            perkara. Konsultasi sejak tahap awal dapat
+                            membantu Anda memahami prosedur dan pilihan
+                            yang tersedia.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqFour"
+                            aria-expanded="false"
+                            aria-controls="faqFour">
+
+                            <span class="faq-number">04</span>
+
+                            <span class="faq-question">
+                                Apa saja yang dapat dipersiapkan sebelum konsultasi?
+                            </span>
+
+                        </button>
+                    </h3>
+
+                    <div id="faqFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+                            Jika tersedia, siapkan kronologi kejadian,
+                            surat panggilan, dokumen proses hukum, serta
+                            informasi atau bukti lain yang relevan.
+                            Tanyakan kepada tim JLC cara menyampaikan
+                            dokumen sensitif secara aman.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqFive"
+                            aria-expanded="false"
+                            aria-controls="faqFive">
+
+                            <span class="faq-number">05</span>
+
+                            <span class="faq-question">
+                                Berapa biaya jasa Pengacara Pembunuhan?
+                            </span>
+
+                        </button>
+                    </h3>
+
+                    <div id="faqFive"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFive"
+                        data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+                            Biaya bergantung pada kompleksitas perkara,
+                            tahap penanganan, kebutuhan pendampingan,
+                            dan ruang lingkup pekerjaan yang disepakati.
+                            Hubungi JLC untuk memperoleh informasi biaya
+                            sesuai kebutuhan layanan.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 6 -->
+                <div class="accordion-item">
+                    <h3 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#faqSix"
+                            aria-expanded="false"
+                            aria-controls="faqSix">
+
+                            <span class="faq-number">06</span>
+
+                            <span class="faq-question">
+                                Apakah pengacara dapat menjamin putusan bebas?
+                            </span>
+
+                        </button>
+                    </h3>
+
+                    <div id="faqSix"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingSix"
+                        data-bs-parent="#faqAccordion">
+
+                        <div class="accordion-body">
+                            Tidak. Advokat tidak dapat menjamin putusan
+                            bebas atau hasil tertentu. Penanganan perkara
+                            harus didasarkan pada fakta, alat bukti,
+                            ketentuan hukum yang berlaku, dan proses
+                            penilaian oleh pihak yang berwenang.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+@endsection
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+    const pages = document.querySelectorAll('.gallery-page');
+    const dots = document.querySelectorAll('.page-dot');
+
+    dots.forEach(dot => {
+        dot.addEventListener('click', function () {
+
+            const selectedPage = Number(this.dataset.page);
+
+            pages.forEach((page, index) => {
+                page.classList.toggle(
+                    'active',
+                    index + 1 === selectedPage
+                );
+            });
+
+            dots.forEach(button => {
+                button.classList.toggle('active', button === this);
+            });
+
+        });
+    });
+
+});
+</script>

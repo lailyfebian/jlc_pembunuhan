@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <title>Ikon dokumen dan fakta</title>
+  <circle cx="64" cy="64" r="56" fill="#FBF4E7"/>
+  <path d="M43 27H72L88 43V94C88 98.4 84.4 102 80 102H43C38.6 102 35 98.4 35 94V35C35 30.6 38.6 27 43 27Z"
+        stroke="#C89A3D" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M71.5 28V44H87" stroke="#C89A3D" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M47 56H75M47 68H75M47 80H66" stroke="#C89A3D" stroke-width="4.5" stroke-linecap="round"/>
+</svg>

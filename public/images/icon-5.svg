@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" fill="none">
+  <title>Ikon komunikasi</title>
+  <circle cx="64" cy="64" r="56" fill="#FBF4E7"/>
+  <path d="M38 36.5H90C97.18 36.5 103 42.32 103 49.5V69.5C103 76.68 97.18 82.5 90 82.5H62.5L45 96V82.5H38C30.82 82.5 25 76.68 25 69.5V49.5C25 42.32 30.82 36.5 38 36.5Z" stroke="#C89A3D" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M42 52H84" stroke="#C89A3D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M42 62.5H75" stroke="#C89A3D" stroke-width="4" stroke-linecap="round"/>
+</svg>
