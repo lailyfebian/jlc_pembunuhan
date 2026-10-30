@@ -956,7 +956,7 @@ p {
 }
 
 .about-content {
-    max-height: 250px;
+    max-height: 145px;
     transition: max-height .6s ease;
     position: relative;
 }
@@ -1037,7 +1037,7 @@ p {
     }
 
     .about-content {
-        max-height: 350px;
+        max-height: 170px;
     }
 
     .about-image {
@@ -1067,7 +1067,7 @@ p {
     }
 
     .about-content {
-        max-height: 350px;
+        max-height: 165px;
         padding-bottom: 30px;
     }
 
@@ -1107,7 +1107,7 @@ p {
     }
 
     .about-content {
-        max-height: 350px;
+        max-height: 150px;
         padding-bottom: 30px;
     }
 
@@ -1140,7 +1140,7 @@ p {
     }
 
     .about-content {
-        max-height: 350px;
+        max-height: 140px;
         padding-bottom: 30px;
     }
 
