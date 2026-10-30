@@ -1405,6 +1405,7 @@
 
 @endsection
 <script>
+
 document.addEventListener('DOMContentLoaded', function () {
 
     const source = document.getElementById('gallerySource');
@@ -1425,6 +1426,12 @@ document.addEventListener('DOMContentLoaded', function () {
     let isHovered = false;
     let isAnimating = false;
     let track = null;
+
+    // Touch swipe variables
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchEndX = 0;
+    let touchEndY = 0;
 
     const mobileQuery = window.matchMedia('(max-width: 767px)');
 
@@ -1529,6 +1536,51 @@ document.addEventListener('DOMContentLoaded', function () {
         startAutoSlide();
     }
 
+    // Mobile Touch Swipe
+    pagesContainer.addEventListener('touchstart', function (e) {
+
+        if (!mobileQuery.matches) return;
+
+        touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+
+        stopAutoSlide();
+
+    }, { passive: true });
+
+    pagesContainer.addEventListener('touchend', function (e) {
+
+        if (!mobileQuery.matches) return;
+
+        touchEndX = e.changedTouches[0].screenX;
+        touchEndY = e.changedTouches[0].screenY;
+
+        const diffX = touchStartX - touchEndX;
+        const diffY = touchStartY - touchEndY;
+
+        if (
+            Math.abs(diffX) > 50 &&
+            Math.abs(diffX) > Math.abs(diffY) &&
+            !isAnimating
+        ) {
+
+            if (diffX > 0) {
+                // Swipe kiri: halaman berikutnya
+                showPage(currentPage + 1);
+            } else {
+                // Swipe kanan: halaman sebelumnya
+                showPage(currentPage - 1);
+            }
+        }
+
+        startAutoSlide();
+
+    }, { passive: true });
+
+    pagesContainer.addEventListener('touchcancel', function () {
+        startAutoSlide();
+    }, { passive: true });
+
     gallery.addEventListener('mouseenter', () => {
         isHovered = true;
         stopAutoSlide();
@@ -1548,4 +1600,5 @@ document.addEventListener('DOMContentLoaded', function () {
     buildGallery();
 
 });
+
 </script>

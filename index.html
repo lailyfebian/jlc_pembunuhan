@@ -183,6 +183,10 @@
                     <div class="about-content" id="aboutContent">
                         <p>Memilih pengacara untuk perkara pidana serius memerlukan pertimbangan yang matang. JLC membantu klien menemukan pendamping hukum berdasarkan kebutuhan perkara, sehingga konsultasi dan penanganan hukum dapat dilakukan dengan mempertimbangkan fakta serta prosedur yang berlaku.</p>
                         <p>Kami mengutamakan komunikasi yang jelas, analisis hukum yang cermat, dan pendampingan profesional agar klien memahami proses yang sedang dihadapi.</p>
+                        <p>Memilih pengacara untuk perkara pidana serius memerlukan pertimbangan yang matang. JLC membantu klien menemukan pendamping hukum berdasarkan kebutuhan perkara, sehingga konsultasi dan penanganan hukum dapat dilakukan dengan mempertimbangkan fakta serta prosedur yang berlaku.</p>
+                        <p>Kami mengutamakan komunikasi yang jelas, analisis hukum yang cermat, dan pendampingan profesional agar klien memahami proses yang sedang dihadapi.</p>
+                        <p>Memilih pengacara untuk perkara pidana serius memerlukan pertimbangan yang matang. JLC membantu klien menemukan pendamping hukum berdasarkan kebutuhan perkara, sehingga konsultasi dan penanganan hukum dapat dilakukan dengan mempertimbangkan fakta serta prosedur yang berlaku.</p>
+                        <p>Kami mengutamakan komunikasi yang jelas, analisis hukum yang cermat, dan pendampingan profesional agar klien memahami proses yang sedang dihadapi.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 about-image-container">
@@ -1558,6 +1562,7 @@
     // Gallery Pagination
     
 
+
 document.addEventListener('DOMContentLoaded', function () {
 
     const source = document.getElementById('gallerySource');
@@ -1578,6 +1583,12 @@ document.addEventListener('DOMContentLoaded', function () {
     let autoSlide = null;
     let isHovered = false;
     let isAnimating = false;
+
+    // Touch swipe variables
+    let touchStartX = 0;
+    let touchStartY = 0;
+    let touchEndX = 0;
+    let touchEndY = 0;
 
     const mobileQuery = window.matchMedia('(max-width: 767px)');
 
@@ -1715,6 +1726,52 @@ document.addEventListener('DOMContentLoaded', function () {
         startAutoSlide();
     }
 
+    // Mobile Touch Swipe
+    pagesContainer.addEventListener('touchstart', function (e) {
+
+        if (!mobileQuery.matches) return;
+
+        touchStartX = e.changedTouches[0].screenX;
+        touchStartY = e.changedTouches[0].screenY;
+
+        stopAutoSlide();
+
+    }, { passive: true });
+
+    pagesContainer.addEventListener('touchend', function (e) {
+
+        if (!mobileQuery.matches) return;
+
+        touchEndX = e.changedTouches[0].screenX;
+        touchEndY = e.changedTouches[0].screenY;
+
+        const diffX = touchStartX - touchEndX;
+        const diffY = touchStartY - touchEndY;
+
+        // Deteksi swipe horizontal
+        if (
+            Math.abs(diffX) > 50 &&
+            Math.abs(diffX) > Math.abs(diffY) &&
+            !isAnimating
+        ) {
+
+            if (diffX > 0) {
+                // Swipe kiri: halaman berikutnya
+                showPage(currentPage + 1, 1);
+            } else {
+                // Swipe kanan: halaman sebelumnya
+                showPage(currentPage - 1, -1);
+            }
+        }
+
+        startAutoSlide();
+
+    }, { passive: true });
+
+    pagesContainer.addEventListener('touchcancel', function () {
+        startAutoSlide();
+    }, { passive: true });
+
     gallery.addEventListener('mouseenter', () => {
         isHovered = true;
         stopAutoSlide();
@@ -1734,6 +1791,7 @@ document.addEventListener('DOMContentLoaded', function () {
     buildGallery();
 
 });
+
 
 
 </script>
