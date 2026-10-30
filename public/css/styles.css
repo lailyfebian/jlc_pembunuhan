@@ -1040,9 +1040,6 @@ p {
         max-height: 170px;
     }
 
-    .about-image {
-        margin-top: -30px;
-    }
 
     .about-image img {
         border-radius: 18px;
@@ -1068,7 +1065,6 @@ p {
 
     .about-content {
         max-height: 165px;
-        padding-bottom: 30px;
     }
 
     .about-content p {
@@ -1079,10 +1075,6 @@ p {
     .btn-about {
         padding: 13px 24px;
         font-size: 15px;
-    }
-
-    .about-image {
-        margin-top: -25px;
     }
 
     .about-image img {
@@ -1108,7 +1100,6 @@ p {
 
     .about-content {
         max-height: 150px;
-        padding-bottom: 30px;
     }
 
     .about-content p {
@@ -1125,10 +1116,6 @@ p {
         font-size: 15px;
     }
 
-    .about-image {
-        margin-top: -20px;
-    }
-
     .about-image img {
         border-radius: 14px;
     }
@@ -1141,7 +1128,6 @@ p {
 
     .about-content {
         max-height: 140px;
-        padding-bottom: 30px;
     }
 
     .about-content p {
