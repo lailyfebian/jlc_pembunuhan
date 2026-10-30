@@ -1032,6 +1032,10 @@ p {
         padding: 70px 0;
     }
 
+    .about-text-container{
+        padding-bottom: 60px;
+    }
+
     .about-title {
         font-size: 40px;
     }
@@ -1039,6 +1043,7 @@ p {
     .about-content {
         max-height: 170px;
     }
+
 
     .about-image {
         margin-top: 40px;
@@ -1055,6 +1060,9 @@ p {
     .about-section {
         padding: 60px 0;
     }
+    .about-text-container{
+        padding-bottom: 60px;
+    }
 
     .about-label {
         font-size: 13px;
@@ -1068,7 +1076,6 @@ p {
 
     .about-content {
         max-height: 165px;
-        padding-bottom: 1000px;
     }
 
     .about-content p {
@@ -1093,6 +1100,9 @@ p {
 @media (max-width:575px) {
     .about-section {
         padding: 50px 0;
+    }
+    .about-text-container{
+        padding-bottom: 80px;
     }
 
     .about-label {
