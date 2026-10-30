@@ -1037,12 +1037,12 @@ p {
     }
 
     .about-content {
-        max-height: 800px;
+        max-height: 170px;
     }
 
 
-    .about-image {
-        margin-top: 540px;
+    .about-image-container {
+        margin-top: 240px !important;
     }
 
     .about-image img {
@@ -1081,8 +1081,8 @@ p {
         font-size: 15px;
     }
 
-    .about-image {
-        margin-top: 535px;
+    .about-image-container {
+        margin-top: 135px !important;
     }
 
     .about-image img {
