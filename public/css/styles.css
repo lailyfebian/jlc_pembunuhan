@@ -1032,16 +1032,12 @@ p {
         padding: 70px 0;
     }
 
-    .about-text-container{
-        padding-bottom: 60px;
-    }
-
     .about-title {
         font-size: 40px;
     }
 
     .about-content {
-        max-height: 170px;
+        max-height: 800px;
     }
 
 
@@ -1059,9 +1055,6 @@ p {
 @media (max-width:767px) {
     .about-section {
         padding: 60px 0;
-    }
-    .about-text-container{
-        padding-bottom: 60px;
     }
 
     .about-label {
@@ -1100,9 +1093,6 @@ p {
 @media (max-width:575px) {
     .about-section {
         padding: 50px 0;
-    }
-    .about-text-container{
-        padding-bottom: 80px;
     }
 
     .about-label {
