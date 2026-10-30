@@ -1020,9 +1020,9 @@ p {
     }
 
 
-    .about-image-container {
-        margin-top: 240px !important;
-    }
+ .about-image-container {
+        margin-top: 0 !important;
+    }   
 
     .about-image img {
         border-radius: 18px;
@@ -1102,8 +1102,8 @@ p {
         font-size: 15px;
     }
 
-    .about-image {
-        margin-top: 30px;
+     .about-image-container {
+        margin-top: 0 !important;
     }
 
     .about-image img {
