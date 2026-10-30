@@ -1040,6 +1040,10 @@ p {
         max-height: 170px;
     }
 
+    .about-image-container{
+        margin-top: 0;
+        padding-top: 0;
+    }
 
     .about-image img {
         border-radius: 18px;
@@ -1075,6 +1079,11 @@ p {
     .btn-about {
         padding: 13px 24px;
         font-size: 15px;
+    }
+
+    .about-image-container{
+        margin-top: 0;
+        padding-top: 0;
     }
 
     .about-image img {
@@ -1114,6 +1123,11 @@ p {
         padding: 15px;
         border-radius: 10px;
         font-size: 15px;
+    }
+
+    .about-image-container{
+        margin-top: 0;
+        padding-top: 0;
     }
 
     .about-image img {
