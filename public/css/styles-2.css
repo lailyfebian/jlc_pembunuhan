@@ -3219,7 +3219,7 @@ p {
     background-image: linear-gradient(
             rgba(255, 255, 255, 0.8),
             rgba(255, 255, 255, 0.8)
-        ), url("../images/background-faq-pembunuhan.png");
+        ), url("../images/background-faq-pembunuhan.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -3797,7 +3797,7 @@ p {
             rgba(255, 255, 255, 0.8),
             rgba(255, 255, 255, 0.8)
         ),
-        url("../images/background-biru.png") center center / cover no-repeat;
+        url("../images/background-biru.webp") center center / cover no-repeat;
 }
 
 /* Header */
