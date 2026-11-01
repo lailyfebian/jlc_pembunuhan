@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('css/styles-2.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     
     <meta name="google-site-verification" content="gaK8n0EmDCbSb9IofNtbFxQjOOq7vQ0kIlG5SYRM_i4" />
 </head>

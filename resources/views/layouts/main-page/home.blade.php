@@ -1011,95 +1011,79 @@
         <div class="gallery-heading text-center">
             <div class="gallery-eyebrow">
                 <span></span>
-                OUR GALLERY
+                GALERI
                 <span></span>
             </div>
 
             <h2>
-                Dokumentasi
-                <span>Kegiatan Kami.</span>
+                Dokumentasi Kegiatan
+                <span>Justicia Legal Counsel</span>
             </h2>
 
             <p>
-                Berbagai dokumentasi kegiatan, pertemuan,
-                dan perjalanan profesional Justicia Legal Counsel.
+                Berbagai kegiatan, konsultasi, dan pendampingan hukum
+                yang telah kami lakukan bersama klien di berbagai jenis perkara.
             </p>
         </div>
 
-        <!-- Gallery Source -->
-        <div id="gallerySource" hidden>
+        <!-- Gallery Page 1 -->
+        <div class="gallery-page active" id="gallery-page-1">
+            <div class="gallery-grid">
 
-            <div class="gallery-item" data-category="lainnya">
-                <img src="{{ asset('images/gallery/galeri/galeri-landscape-1.jpeg') }}" alt="Dokumentasi kegiatan 1">
+                <div class="gallery-item gallery-wide" data-category="konsultasi">
+                    <img src="{{ asset('images/gallery/galeri/galeri-landscape-1.jpeg') }}" alt="Diskusi dan Konsultasi Hukum">
+                </div>
+
+                <div class="gallery-item" data-category="konsultasi">
+                    <img src="{{ asset('images/gallery/galeri/galeri-landscape-2.jpeg') }}" alt="Penelaahan Dokumen Perkara">
+                </div>
+
+                <div class="gallery-item" data-category="lainnya">
+                    <img src="{{ asset('images/gallery/galeri/galeri-landscape-3.jpeg') }}" alt="Pertemuan dan Koordinasi">
+                </div>
+
+                <div class="gallery-item gallery-wide" data-category="persidangan">
+                    <img src="{{ asset('images/gallery/galeri/galeri-landscape-4.jpeg') }}" alt="Pendampingan Persidangan">
+                </div>
+
+                <div class="gallery-item" data-category="persidangan">
+                    <img src="{{ asset('images/gallery/galeri/galeri-landscape-5.jpeg') }}" alt="Dokumentasi Proses Hukum">
+                </div>
+
+                <div class="gallery-item gallery-wide" data-category="konsultasi">
+                    <img src="{{ asset('images/gallery/galeri/galeri-landscape-6.jpeg') }}" alt="Diskusi Bersama Tim Advokat">
+                </div>
+
+                <div class="gallery-item" data-category="lainnya">
+                    <img src="{{ asset('images/gallery/galeri/galeri-landscape-7.jpeg') }}" alt="Referensi dan Kajian Hukum">
+                </div>
+
+                <div class="gallery-item gallery-wide" data-category="konsultasi">
+                    <img src="{{ asset('images/gallery/galeri/galeri-landscape-8.jpeg') }}" alt="Pendampingan dan Konsultasi Klien">
+                </div>
+
             </div>
-
-            <div class="gallery-item" data-category="lainnya">
-                <img src="{{ asset('images/gallery/galeri/galeri-landscape-2.jpeg') }}" alt="Dokumentasi kegiatan 2">
-            </div>
-
-            <div class="gallery-item" data-category="lainnya">
-                <img src="{{ asset('images/gallery/galeri/galeri-landscape-3.jpeg') }}" alt="Dokumentasi kegiatan 3">
-            </div>
-
-            <div class="gallery-item" data-category="lainnya">
-                <img src="{{ asset('images/gallery/galeri/galeri-landscape-4.jpeg') }}" alt="Dokumentasi kegiatan 4">
-            </div>
-
-            <div class="gallery-item" data-category="lainnya">
-                <img src="{{ asset('images/gallery/galeri/galeri-landscape-5.jpeg') }}" alt="Dokumentasi kegiatan 5">
-            </div>
-
-            <div class="gallery-item" data-category="lainnya">
-                <img src="{{ asset('images/gallery/galeri/galeri-landscape-6.jpeg') }}" alt="Dokumentasi kegiatan 6">
-            </div>
-
-            <div class="gallery-item" data-category="lainnya">
-                <img src="{{ asset('images/gallery/galeri/galeri-landscape-7.jpeg') }}" alt="Dokumentasi kegiatan 7">
-            </div>
-
-            <div class="gallery-item" data-category="lainnya">
-                <img src="{{ asset('images/gallery/galeri/galeri-landscape-8.jpeg') }}" alt="Dokumentasi kegiatan 8">
-            </div>
-
-            <div class="gallery-item" data-category="lainnya">
-                <img src="{{ asset('images/gallery/galeri/galeri-1.jpeg') }}" alt="Dokumentasi kegiatan 9">
-            </div>
-
-            <div class="gallery-item" data-category="lainnya">
-                <img src="{{ asset('images/gallery/galeri/galeri-2.jpeg') }}" alt="Dokumentasi kegiatan 10">
-            </div>
-
-            <div class="gallery-item" data-category="lainnya">
-                <img src="{{ asset('images/gallery/galeri/galeri-3.jpeg') }}" alt="Dokumentasi kegiatan 11">
-            </div>
-
-            <div class="gallery-item" data-category="lainnya">
-                <img src="{{ asset('images/gallery/galeri/galeri-4.jpeg') }}" alt="Dokumentasi kegiatan 12">
-            </div>
-
-            <div class="gallery-item" data-category="lainnya">
-                <img src="{{ asset('images/gallery/galeri/galeri-5.jpeg') }}" alt="Dokumentasi kegiatan 13">
-            </div>
-
-            <div class="gallery-item" data-category="lainnya">
-                <img src="{{ asset('images/gallery/galeri/galeri-6.jpeg') }}" alt="Dokumentasi kegiatan 14">
-            </div>
-
-            <div class="gallery-item" data-category="lainnya">
-                <img src="{{ asset('images/gallery/galeri/galeri-7.jpeg') }}" alt="Dokumentasi kegiatan 15">
-            </div>
-
-            <div class="gallery-item" data-category="lainnya">
-                <img src="{{ asset('images/gallery/galeri/galeri-8.jpeg') }}" alt="Dokumentasi kegiatan 16">
-            </div>
-
         </div>
 
-        <!-- Gallery Pages -->
-        <div id="galleryPages"></div>
+        <!-- Gallery Page 2 -->
+        <div class="gallery-page" id="gallery-page-2">
+            <div class="gallery-grid">
+
+                @for ($i = 1; $i <= 8; $i++)
+                    <div class="gallery-item" data-category="lainnya">
+                        <img src="{{ asset('images/gallery/galeri/galeri-' . $i . '.jpeg') }}"
+                             alt="Dokumentasi kegiatan Justicia Legal Counsel {{ $i }}">
+                    </div>
+                @endfor
+
+            </div>
+        </div>
 
         <!-- Pagination -->
-        <div class="gallery-pagination" id="galleryPagination"></div>
+        <div class="gallery-pagination">
+            <button class="page-dot active" data-page="1" aria-label="Halaman 1"></button>
+            <button class="page-dot" data-page="2" aria-label="Halaman 2"></button>
+        </div>
 
     </div>
 </section>
@@ -1405,200 +1389,29 @@
 
 @endsection
 <script>
-
 document.addEventListener('DOMContentLoaded', function () {
 
-    const source = document.getElementById('gallerySource');
-    const pagesContainer = document.getElementById('galleryPages');
-    const pagination = document.getElementById('galleryPagination');
-    const gallery = document.querySelector('.jlc-gallery-section');
+    const pages = document.querySelectorAll('.gallery-page');
+    const dots = document.querySelectorAll('.page-dot');
 
-    if (!source || !pagesContainer || !pagination || !gallery) {
-        console.error('JLC Gallery: Elemen tidak ditemukan.');
-        return;
-    }
+    dots.forEach(dot => {
+        dot.addEventListener('click', function () {
 
-    const items = Array.from(source.querySelectorAll('.gallery-item'));
+            const selectedPage = Number(this.dataset.page);
 
-    let currentPage = 0;
-    let totalPages = 0;
-    let autoSlide = null;
-    let isHovered = false;
-    let isAnimating = false;
-    let track = null;
+            pages.forEach((page, index) => {
+                page.classList.toggle(
+                    'active',
+                    index + 1 === selectedPage
+                );
+            });
 
-    // Touch swipe variables
-    let touchStartX = 0;
-    let touchStartY = 0;
-    let touchEndX = 0;
-    let touchEndY = 0;
+            dots.forEach(button => {
+                button.classList.toggle('active', button === this);
+            });
 
-    const mobileQuery = window.matchMedia('(max-width: 767px)');
-
-    function updateDots() {
-        const dots = pagination.querySelectorAll('.page-dot');
-
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('active', index === currentPage);
         });
-    }
-
-    function showPage(index) {
-
-        if (isAnimating || totalPages <= 1 || !track) return;
-
-        const nextPage = (index + totalPages) % totalPages;
-
-        if (nextPage === currentPage) return;
-
-        isAnimating = true;
-        currentPage = nextPage;
-
-        track.style.transform = `translateX(-${currentPage * 100}%)`;
-
-        updateDots();
-
-        setTimeout(() => {
-            isAnimating = false;
-        }, 700);
-    }
-
-    function stopAutoSlide() {
-        clearInterval(autoSlide);
-        autoSlide = null;
-    }
-
-    function startAutoSlide() {
-
-        stopAutoSlide();
-
-        if (isHovered || totalPages <= 1) return;
-
-        autoSlide = setInterval(() => {
-            showPage(currentPage + 1);
-        }, 4000);
-    }
-
-    function buildGallery() {
-
-        stopAutoSlide();
-
-        isAnimating = false;
-        currentPage = 0;
-
-        const itemsPerPage = mobileQuery.matches ? 6 : 8;
-
-        pagesContainer.innerHTML = '';
-        pagination.innerHTML = '';
-
-        totalPages = Math.ceil(items.length / itemsPerPage);
-
-        track = document.createElement('div');
-        track.id = 'galleryTrack';
-
-        for (let i = 0; i < totalPages; i++) {
-
-            const page = document.createElement('div');
-            page.className = 'gallery-page';
-
-            const grid = document.createElement('div');
-            grid.className = 'gallery-grid';
-
-            const start = i * itemsPerPage;
-            const end = start + itemsPerPage;
-
-            items.slice(start, end).forEach(item => {
-                grid.appendChild(item);
-            });
-
-            page.appendChild(grid);
-            track.appendChild(page);
-
-            const dot = document.createElement('button');
-
-            dot.type = 'button';
-            dot.className = 'page-dot';
-            dot.setAttribute('aria-label', 'Halaman ' + (i + 1));
-
-            dot.addEventListener('click', () => {
-                showPage(i);
-                startAutoSlide();
-            });
-
-            pagination.appendChild(dot);
-        }
-
-        pagesContainer.appendChild(track);
-
-        track.style.transform = 'translateX(0)';
-
-        updateDots();
-        startAutoSlide();
-    }
-
-    // Mobile Touch Swipe
-    pagesContainer.addEventListener('touchstart', function (e) {
-
-        if (!mobileQuery.matches) return;
-
-        touchStartX = e.changedTouches[0].screenX;
-        touchStartY = e.changedTouches[0].screenY;
-
-        stopAutoSlide();
-
-    }, { passive: true });
-
-    pagesContainer.addEventListener('touchend', function (e) {
-
-        if (!mobileQuery.matches) return;
-
-        touchEndX = e.changedTouches[0].screenX;
-        touchEndY = e.changedTouches[0].screenY;
-
-        const diffX = touchStartX - touchEndX;
-        const diffY = touchStartY - touchEndY;
-
-        if (
-            Math.abs(diffX) > 50 &&
-            Math.abs(diffX) > Math.abs(diffY) &&
-            !isAnimating
-        ) {
-
-            if (diffX > 0) {
-                // Swipe kiri: halaman berikutnya
-                showPage(currentPage + 1);
-            } else {
-                // Swipe kanan: halaman sebelumnya
-                showPage(currentPage - 1);
-            }
-        }
-
-        startAutoSlide();
-
-    }, { passive: true });
-
-    pagesContainer.addEventListener('touchcancel', function () {
-        startAutoSlide();
-    }, { passive: true });
-
-    gallery.addEventListener('mouseenter', () => {
-        isHovered = true;
-        stopAutoSlide();
     });
-
-    gallery.addEventListener('mouseleave', () => {
-        isHovered = false;
-        startAutoSlide();
-    });
-
-    if (mobileQuery.addEventListener) {
-        mobileQuery.addEventListener('change', buildGallery);
-    } else {
-        mobileQuery.addListener(buildGallery);
-    }
-
-    buildGallery();
 
 });
-
 </script>
