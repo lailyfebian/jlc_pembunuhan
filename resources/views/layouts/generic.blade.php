@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="{{ asset('css/styles-2.css') }}">
     
     <meta name="google-site-verification" content="gaK8n0EmDCbSb9IofNtbFxQjOOq7vQ0kIlG5SYRM_i4" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -41,6 +40,8 @@
     @endif
 
     @include('layouts.parts.footer')
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
     
 </body>
 
