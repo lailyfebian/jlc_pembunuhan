@@ -913,27 +913,6 @@ p {
 }
 
 
-.hidden {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all .8s ease;
-}
-
-.show {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.progress-scroll {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 4px;
-    width: 0;
-    background: #C89A3D;
-    z-index: 99999;
-    transition: width .15s linear;
-}
 
 .about-section {
     padding: 100px 0;
@@ -956,28 +935,11 @@ p {
 }
 
 .about-content {
-    max-height: 145px;
+    max-height: none;
     transition: max-height .6s ease;
     position: relative;
 }
 
-.about-content::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 60px;
-    transition: .4s;
-}
-
-.about-content.open {
-    max-height: 900px;
-}
-
-.about-content.open::after {
-    opacity: 0;
-}
 
 .about-content p {
     color: #666;
@@ -1037,12 +999,13 @@ p {
     }
 
     .about-content {
-        max-height: 170px;
+        max-height: none;
     }
 
-    .about-image {
-        margin-top: 40px;
-    }
+
+ .about-image-container {
+        margin-top: 0 !important;
+    }   
 
     .about-image img {
         border-radius: 18px;
@@ -1067,7 +1030,7 @@ p {
     }
 
     .about-content {
-        max-height: 165px;
+        max-height: none;
     }
 
     .about-content p {
@@ -1080,10 +1043,9 @@ p {
         font-size: 15px;
     }
 
-    .about-image {
-        margin-top: 35px;
+     .about-image-container {
+        margin-top: 0 !important;
     }
-
     .about-image img {
         border-radius: 16px;
     }
@@ -1106,7 +1068,7 @@ p {
     }
 
     .about-content {
-        max-height: 150px;
+        max-height: none;
     }
 
     .about-content p {
@@ -1138,7 +1100,7 @@ p {
     }
 
     .about-content {
-        max-height: 140px;
+        max-height: none;
     }
 
     .about-content p {
@@ -4023,6 +3985,7 @@ p {
 }
 
 
+
 /* ========================================
    JLC GALLERY SECTION
 ======================================== */
@@ -4129,27 +4092,34 @@ p {
     font-size: 16px;
     line-height: 1.7;
 }
-/* Gallery Grid */
+
+/* Gallery Slider */
+
+#galleryPages {
+    display: flex;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
 
 .gallery-page {
-    display: none;
+    display: block;
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 100%;
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .gallery-page.active {
     display: block;
-    animation: galleryFade .45s ease;
 }
 
-@keyframes galleryFade {
-    from {
-        opacity: 0;
-        transform: translateY(12px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+#galleryPages.is-sliding .gallery-page {
+    transition: transform .65s ease;
 }
+
+/* Gallery Grid */
 
 .gallery-grid {
     display: grid;
@@ -4178,7 +4148,8 @@ p {
     transform: scale(1.06);
 }
 
-/* Susunan baris pertama */
+/* Desktop Gallery Layout */
+
 .gallery-item:nth-child(8n + 1) {
     grid-column: span 4;
 }
@@ -4195,7 +4166,6 @@ p {
     grid-column: span 4;
 }
 
-/* Susunan baris kedua */
 .gallery-item:nth-child(8n + 5) {
     grid-column: span 2;
 }
@@ -4217,6 +4187,7 @@ p {
 .gallery-pagination {
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 13px;
     margin-top: 23px;
 }
@@ -4228,17 +4199,21 @@ p {
     border-radius: 50%;
     padding: 0;
     background: #dfdfdf;
+    cursor: pointer;
     transition: .3s ease;
 }
 
 .page-dot.active {
     width: 35px;
     border-radius: 20px;
-    background: linear-gradient(135deg,
-        var(--secondary), var(--secondary-dark));
+    background: linear-gradient(
+        135deg,
+        var(--secondary),
+        var(--secondary-dark)
+    );
 }
 
-/* Responsive */
+/* Tablet */
 
 @media (max-width: 991px) {
     .gallery-grid {
@@ -4249,13 +4224,11 @@ p {
     .gallery-item:nth-child(n) {
         grid-column: span 3;
     }
+}
 
-    .gallery-item:nth-child(4n + 1),
-    .gallery-item:nth-child(4n + 4) {
-        grid-column: span 3;
-    }
+/* Mobile */
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
     .jlc-gallery-section {
         padding: 65px 0;
     }
@@ -4270,7 +4243,16 @@ p {
         grid-column: span 1;
         grid-row: span 2;
     }
-}
 
+    .gallery-eyebrow {
+        font-size: 11px;
+        letter-spacing: 5px;
+        gap: 12px;
+    }
+
+    .gallery-heading p {
+        font-size: 14px;
+    }
+}
 
 
