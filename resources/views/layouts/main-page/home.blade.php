@@ -388,7 +388,7 @@
                 </div>
                 <div class="col-lg-7">
                     <h4 class="choose-heading text-lg-start text-center">
-                        Pengacara Perempuan Pembunuhan <span>untuk Kebutuhan Pendampingan Hukum</span>
+                        Pengacara Perempuan <span>Kasus Pembunuhan</span>
                     </h4>
                     <p>Sebagian klien mungkin memiliki preferensi untuk berkonsultasi dengan advokat perempuan ketika menghadapi perkara pidana. JLC dapat menerima permintaan tersebut dan membantu mengonfirmasi ketersediaan serta kesesuaian penugasan advokat berdasarkan kebutuhan klien.</p>
                     <p>Layanan <b>Pengacara Perempuan Pembunuhan</b> tetap mengutamakan kompetensi profesional, integritas, kerahasiaan sesuai kewajiban profesi, dan penghormatan terhadap hak-hak hukum setiap klien.</p>
