@@ -388,6 +388,7 @@
                 </div>
                 <div class="col-lg-7">
                     <h4 class="choose-heading text-lg-start text-center">
+                        
                         Pengacara Perempuan <span>Kasus Pembunuhan</span>
                     </h4>
                     <p>Sebagian klien mungkin memiliki preferensi untuk berkonsultasi dengan advokat perempuan ketika menghadapi perkara pidana. JLC dapat menerima permintaan tersebut dan membantu mengonfirmasi ketersediaan serta kesesuaian penugasan advokat berdasarkan kebutuhan klien.</p>
