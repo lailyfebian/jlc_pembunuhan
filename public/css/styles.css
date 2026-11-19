@@ -4323,7 +4323,7 @@ p {
     margin: 0 auto 15px;
     color: #102544 !important;
     font-size: clamp(36px, 4.5vw, 62px);
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.4; display: block;
     color: #c58a20;
 }
@@ -4332,7 +4332,7 @@ p {
     font-family: 'Georgia', serif !important;
     margin: 0 auto 15px;
     font-size: clamp(36px, 4.5vw, 62px);
-    font-weight: 400;
+    font-weight: 500;
     line-height: 1.4; 
     display: block;
     color: #c58a20;
@@ -4502,13 +4502,14 @@ p {
     }
 
     .list-kota-header h2 {
-        font-size: 34px !important;
+        font-family: 'Georgia', serif !important;
+        font-size: 27px !important;
         line-height: 1.4;
         margin-bottom: 12px;
     }
 
     .list-kota-header p {
-        font-size: 15px !important;
+        font-size: 14px !important;
         line-height: 1.8;
     }
 
@@ -4529,7 +4530,7 @@ p {
     .list-kota-grid a {
         gap: 7px;
         padding: 10px 9px;
-        font-size: 15px !important;
+        font-size: 14px !important;
         line-height: 1.5;
     }
 
@@ -4555,7 +4556,7 @@ p {
     }
 
     .list-kota-footer p {
-        font-size: 15px !important;
+        font-size: 14px !important;
         line-height: 1.7;
     }
 }
