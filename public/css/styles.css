@@ -1341,7 +1341,7 @@ p {
     }
 
     .why-content .why-title {
-        font-size: 18px;
+        font-size: 18px !important;
     }
 
     .why-content p {
@@ -3172,6 +3172,10 @@ p {
     .cta-section-2-button {
         width: 100%;
         justify-content: center;
+    }
+
+    .cta-section-2-list-item {
+        font-size: 14px;
     }
 }
 
