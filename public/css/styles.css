@@ -1228,6 +1228,10 @@ p {
     font-weight: 700;
 }
 
+.section-heading p {
+    font-size: 16px !important;
+}
+
 .why-item {
     display: flex;
     gap: 28px;
@@ -1316,6 +1320,10 @@ p {
         font-size: 28px;
     }
 
+    .section-heading p {
+        font-size: 14px !important;
+    }
+
     .section-label {
         font-size: 11px;
     }
@@ -1337,7 +1345,7 @@ p {
     }
 
     .why-content p {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 }
 
@@ -1595,7 +1603,7 @@ p {
     }
 
     .choose-description {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     .choose-item {
@@ -1625,7 +1633,7 @@ p {
     }
 
     .choose-description {
-        font-size: 15px;
+        font-size: 14px;
         line-height: 1.8;
         margin-bottom: 30px;
     }
@@ -2812,7 +2820,7 @@ p {
     }
 
     .team-section-2-description {
-        font-size: 18px;
+        font-size: 14px !important;
         line-height: 1.8;
     }
 
@@ -3146,12 +3154,12 @@ p {
     }
 
     .cta-section-2-description {
-        font-size: 14px;
+        font-size: 14px !important;
         line-height: 1.9;
     }
 
     .cta-section-2-description p {
-        font-size: 14px;
+        font-size: 14px !important;
         line-height: 1.9;
     }
 
@@ -3183,15 +3191,15 @@ p {
     }
 
     .cta-section-2-subtitle {
-        font-size: 17px;
+        font-size: 14px;
     }
 
     .cta-section-2-description {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .cta-section-2-description p {
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 
