@@ -1733,7 +1733,7 @@ p {
 
 .section-title {
     margin-top: 20px;
-    font-size: 48px;
+    font-size: 46px;
     line-height: 1.2;
     font-weight: 700;
     color: var(--primary);
@@ -2596,7 +2596,7 @@ p {
     font-weight: 700;
     line-height: 1.15;
 }
-
+ 
 .team-section-2-title span {
     color: #c89a3c;
 }
@@ -4335,7 +4335,7 @@ p {
     font-family: 'Georgia', serif !important;
     margin: 0 auto 15px;
     color: #102544 !important;
-    font-size: 346px;
+    font-size: 46px;
     font-weight: 500;
     line-height: 1.4; display: block;
     color: #c58a20;
