@@ -3138,11 +3138,11 @@ p {
     }
 
     .cta-section-2-title {
-        font-size: 28px;
+        font-size: 28px !important;
     }
 
     .cta-section-2-subtitle {
-        font-size: 14px;
+        font-size: 14px !important;
     }
 
     .cta-section-2-description {
