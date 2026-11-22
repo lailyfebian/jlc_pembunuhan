@@ -680,9 +680,6 @@ p {
 }
 
 @media (max-width:768px) {
-    h1 {
-        font-size: 48px;
-    }
 
     .hero-section {
         padding: 140px 0 70px;
@@ -722,6 +719,14 @@ p {
         width: 64px;
         height: 64px;
         font-size: 26px;
+    }
+
+    .feature-item .feature-subtitle {
+        font-size: 18px !important;
+    }
+
+    .feature-item p {
+        font-size: 14px;
     }
 }
 
@@ -784,13 +789,6 @@ p {
 
     .feature-item {
         padding: 25px 15px;
-    }
-    .feature-item .feature-subtitle {
-        font-size: 18px;
-    }
-
-    .feature-item p {
-        font-size: 14px;
     }
 
 }
