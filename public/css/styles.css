@@ -600,62 +600,6 @@ p {
 }
 
 
-
-/*@media (min-width:1600px) {
-    .container {
-        max-width: 1450px;
-    }
-
-    .hero-section {
-        padding: 210px 0 150px;
-    }
-
-    .hero-content h1 {
-        font-size: 62px !important;
-        max-width: 720px;
-    }
-
-    .hero-content p {
-        max-width: 620px;
-    }
-
-    .hero-image img {
-        border-radius: 34px;
-    }
-}
-
-@media (max-width:1400px) {
-    .container {
-        max-width: 1180px;
-    }
-
-    .hero-content h1 {
-        font-size: 56px !important;
-    }
-}
-
-@media (max-width:1199px) {
-    .hero-section {
-        padding: 170px 0 120px;
-    }
-
-    .hero-content h1 {
-        font-size: 46px !important;
-    }
-
-    .navbar-brand img {
-        width: 60px;
-    }
-
-    .navbar-custom.scrolled .navbar-brand img {
-        width: 70px;
-    }
-
-    .feature-item {
-        padding: 35px 20px;
-    }
-}*/
-
 @media (max-width:991px) {
     .navbar-custom {
         padding: 15px 0;
@@ -809,7 +753,7 @@ p {
     }
 
     .hero-content h1 {
-        font-size: 32px !important;
+        font-size: 28px !important;
         line-height: 1.15;
         margin-bottom: 20px;
     }
@@ -853,7 +797,7 @@ p {
 
 @media (max-width:390px) {
     .hero-content h1 {
-        font-size: 32px !important;
+        font-size: 28px !important;
     }
 
     .hero-badge {
@@ -2883,14 +2827,14 @@ p {
         padding: 60px 0;
     }
 
-    .team-section-2-title {
+    /*.team-section-2-title {
         font-size: 32px;
-    }
+    }*/
 
-    .team-section-2-description {
+    /*.team-section-2-description {
         font-size: 16px;
     }
-
+*/
     .team-section-2-content .team-name {
         font-size: 19px;
     }
