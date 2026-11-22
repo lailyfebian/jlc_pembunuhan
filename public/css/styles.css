@@ -1111,7 +1111,7 @@ p {
 
 .cta-content h4 {
     color: #D6A24A;
-    font-size: 36px;
+    font-size: 46px;
     font-family: 'Cormorant Garamond', serif;
     font-weight: 700;
     margin-bottom: 16px;
@@ -1593,7 +1593,7 @@ p {
     }
 
     .choose-heading {
-        font-size: 28px;
+        font-size: 28px !important;
     }
 
     .choose-description {
@@ -2566,6 +2566,10 @@ p {
     z-index: 2;
 }
 
+.team-section-2-heading p{
+    font-size: 16px;
+}
+
 .team-section-2-subtitle {
     display: inline-flex;
     align-items: center;
@@ -2586,10 +2590,11 @@ p {
 }
 
 .team-section-2-title {
+    font-family: 'Cormorant Garamond', serif;
     margin-top: 20px;
     margin-bottom: 22px;
     color: #14213d;
-    font-size: 64px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.15;
 }
@@ -2602,7 +2607,7 @@ p {
     max-width: 850px;
     margin: 0 auto;
     color: #4d596a;
-    font-size: 24px;
+    font-size: 14px;
     line-height: 1.8;
 }
 
@@ -2801,7 +2806,11 @@ p {
     }
 
     .team-section-2-title {
-        font-size: 38px;
+        font-size: 28px !important;
+    }
+
+    .team-section-2-heading p{
+        font-size: 14px;
     }
 
     .team-section-2-description {
